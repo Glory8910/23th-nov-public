@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .container {
+            margin:2px black;
+            padding: 2px;
+            width: 440px;
+            height: 700px;
+            background-color:rgb(50, 168, 168);
+        }
+
+        .display {
+            width: 425px;
+            height: 60px;
+            padding: 5px 7px;
+            background-color: rgb(232, 243, 237);
+            text-align: right ;
+            font-size: 30px;
+        }
+       
+
+        .btn {
+            border-radius: 50%;
+            width: 80px;
+            padding: 20px;
+            height: 80px;
+            margin: 10px;
+            font-size: 30px;
+        }
+        .btn:focus, .equ:focus{
+            outline: 0;
+            border:2px black;
+        
+        }
+        .equ{
+           border-radius: 10%;
+            width: 420px;
+            padding: 5px;
+            height: 80px;
+            margin: 10px;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container" id="containerbox">
+        <div class="display" id="displayarea">0</div>
+        <div class="cl" id="all">
+            
+            <button class="num btn" type="button" id="1">1</button>
+            <button class="num btn" type="button" id="2">2</button>
+            <button class="num btn" type="button" id="3">3</button>
+            <button class="oper btn" type="button" id="+">+</button>
+          
+            <button class="num btn" type="button" id="4">4</button>
+            <button class="num btn" type="button" id="5">5</button>
+            <button class="num btn" type="button" id="6">6</button>
+            <button class="oper btn" type="button" id="-">-</button>
+
+            <button class="num btn" type="button" id="7">7</button>
+            <button class="num btn" type="button" id="8">8</button>
+            <button class="num btn" type="button" id="9">9</button>
+            <button class="oper btn" type="button" id="*">*</button>
+
+            <button class="num btn" type="button" id="0">0</button>
+            <button class="num btn" type="button" id=".">.</button>
+            <button class="oper btn" type="button" id="/">/</button>
+            <button class="oper btn" type="button" id="%">%</button>
+
+            <button class="num btn" type="button" id="X">X</button>
+            <button class="AC btn" type="button" id="AC">AC</button>
+            <button class="mem btn" type="button" id="M+">M+</button>
+            <button class="mem btn" type="button" id="M-">M-</button>
+
+            <button class="num equ" type="button" id="=">=</button>
+        </div>
+     
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
